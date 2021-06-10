@@ -1,0 +1,97 @@
+/* @import url(<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,600|Montserrat:300,500" rel="stylesheet">); */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.main_background {
+    position: fixed;
+    background-color: #4F6C6B;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.main_content {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header {
+    padding: 0 0 0 2%;
+}
+
+.links {
+    padding: 0 0 0 5%;
+}
+
+.navbar_links {
+    color: #EAE6E1;
+    /* #B0B0B0; */
+    display: flex;
+    width: 130px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+#navbar_logo{
+    background-color: #fff;
+    /* #60686E; */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+.navbar_item{
+    height: 80px;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+}
+
+.blurb {
+    font-family: 'Cardo', sans-serif;
+    background-color: #EDEDED;
+    position: absolute;
+    top: 35%;
+    right: 8%;
+    width: 40%;
+    z-index: 1;
+    display: inline-block;
+    padding: 4%;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #6B686D;
+    text-decoration-color: #DD7564;
+}
+
+.decoration {
+    position: absolute;
+    top: 20%;
+    right: 12%;
+    width: 46%;
+    height: 40%;
+    z-index: -1;
+    border-style: solid;
+    border-color: #39383a;
+}
