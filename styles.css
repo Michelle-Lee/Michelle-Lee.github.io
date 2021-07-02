@@ -13,19 +13,17 @@
     height: 100%;
     width: 100%;
     display: flex;
+    align-items: center;
 }
 
 .main_content {
     position: relative;
-    top: 20%;
-    left: 0%;
-    width: 100%;
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: 'Cormorant SC', serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    overflow: hidden;
 }
 
 .header {
@@ -43,6 +41,8 @@
     text-decoration: none;
     z-index: 100;
     transition: all 0.3s ease;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .navbar_links:hover {
@@ -52,15 +52,18 @@
 
 #navbar_logo{
     background-color: #fff;
-    /* #60686E; */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     cursor: pointer;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     text-decoration: none;
     font-size: 4rem;
+    text-align: center;
 }
 
 .navbar_item{
@@ -75,9 +78,6 @@
 .blurb {
     font-family: 'Cardo', sans-serif;
     background-color: #EDEDED;
-    position: absolute;
-    top: 35%;
-    right: 8%;
     width: 40%;
     z-index: 1;
     display: inline-block;
@@ -90,14 +90,18 @@
 }
 
 .decoration {
-    position: absolute;
-    top: 20%;
-    right: 12%;
-    width: 46%;
-    height: 40%;
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 50%;
+    height: 50%;
     z-index: -1;
     border-style: solid;
     border-color: #39383a;
+   
 }
 
 @media screen and (max-width: 960px) {
@@ -130,9 +134,7 @@
         margin-top: 5%;
     }
     .decoration {
-        position: absolute;
-        left: 5%;
-        right: 5%;
+
         width: 90%;
         display: flex;
         justify-content: center;
