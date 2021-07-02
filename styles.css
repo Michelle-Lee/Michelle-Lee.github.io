@@ -134,7 +134,9 @@
         margin-top: 5%;
     }
     .decoration {
-
+        position: absolute;
+        left: 5%;
+        right: 5%;
         width: 90%;
         display: flex;
         justify-content: center;
